@@ -5,8 +5,8 @@ description: > # this means to ignore newlines until "baseurl:"
   A place for making, design, and jokes.
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://internetclub.house" # the base hostname & protocol for your site
-twitter_username: jekyllrb
-github_username:  jekyll
+twitter_username: netclubhouse
+github_username:  jsnhff
 
 # Build settings
 markdown: kramdown
