@@ -2,6 +2,75 @@
 layout: default
 ---
 
-<div class="">
-    <canvas id="canvas" resize></canvas>
+<div class="container mb3">
+    <div class="clearfix">
+        <div class="col-6 mx-auto"> 
+            <h2 class="center">"Innovation is serendipity, so you don't know what people will make."</h2>
+            <h3 class="center">~ Tim Berners-Lee</h3>
+        </div>
+    </div>
+</div>
+{% if site.posts != empty %}
+<div class="center heading-large mt4">
+    &orv;
+</div>
+<div class="container">
+    <div class="clearfix">
+        <div class="col-7 mx-auto"> 
+            <h2 id="#writing" class="">Writing</h2>
+            <ul class="list-reset">
+                {% for post in site.posts %}
+                <li>
+                <span class="h6 caps">{{ post.date | date: "%b %-d, %Y" }}</span>
+
+                <h3 class="heading-large m0">
+                    <a class="black" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+                </h3>
+                </li>
+                {% endfor %}
+            </ul>
+        </div>
+    </div>
+</div>
+{% endif %}
+{% if site.projects != empty %}
+<div class="center heading-large mt4">
+    &sext;
+</div>
+<div class="container">
+    <div class="clearfix">
+        <div class="col-7 mx-auto"> 
+            <h2 id="#projects" class="">Projects</h2>
+            <ul class="list-reset">
+                {% for project in site.projects reversed %}
+                <li>
+                <span class="h6 caps">{{ project.date | date: "%b %-d, %Y" }}</span>
+
+                <h3 class="m0">
+                    <a class="black" href="{{ project.url | prepend: site.baseurl }}">{{ project.title }}</a>
+                </h3>
+                </li>
+                {% endfor %}
+            </ul>
+        </div>
+    </div>
+</div>
+{% endif %}
+<div class="center heading-large mt4">
+    &blk14;
+</div>
+<div class="container">
+    <div class="clearfix">
+        <div class="col-7 mx-auto"> 
+            <h2 id="about" class="">About</h2>
+            <div class="flex flex-center mb2">
+                <img src="/images/jason-huff.jpg"
+                width="140" height="140"
+                class="flex-none mr2" />
+                <div class="flex-auto">
+                    <p class="m0">I'm a designer, writer, and artist. Right now, I work at <a href="http://www.etsy.com" class="orange">Etsy</a> as Senior Product Design Manager. I'm lucky to work with great people in an environment where I'm always learning.</p>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>

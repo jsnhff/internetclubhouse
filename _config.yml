@@ -10,3 +10,12 @@ github_username:  jsnhff
 
 # Build settings
 markdown: kramdown
+
+# Collections
+collections:
+    projects:
+        output: true
+        permalink: /projects/:title/
+
+# Permalinks for blog posts
+permalink: /writing/:title/

@@ -3,50 +3,52 @@
 ---
 @charset "utf-8";
 
-
-
-// Our variables
-$base-font-family: Helvetica, Arial, sans-serif;
-$base-font-size:   16px;
-$small-font-size:  $base-font-size * 0.875;
-$base-line-height: 1.5;
-
-$spacing-unit:     30px;
-
-$text-color:       #111;
-$background-color: #fdfdfd;
-$brand-color:      #2a7ae2;
-
-$grey-color:       #828282;
-$grey-color-light: lighten($grey-color, 40%);
-$grey-color-dark:  darken($grey-color, 25%);
-
-// Width of the content area
-$content-width:    800px;
-
-$on-palm:          600px;
-$on-laptop:        800px;
-
-
-
-// Using media queries with like this:
-// @include media-query($on-palm) {
-//     .wrapper {
-//         padding-right: $spacing-unit / 2;
-//         padding-left: $spacing-unit / 2;
-//     }
-// }
-@mixin media-query($device) {
-    @media screen and (max-width: $device) {
-        @content;
-    }
+// Custom Colors for Fun!
+.bg-blue-gray {
+    background-color: #bccbde;
 }
 
+.bg-blue-light {
+    background-color: #c2dde6;
+}
 
+.bg-off-white {
+    background-color: #e6e9f0;
+}
 
-// Import partials from `sass_dir` (defaults to `_sass`)
-@import
-        "base",
-        "layout",
-        "syntax-highlighting"
-;
+.bg-purple {
+    background-color: #431c5d;
+}
+
+.bg-orange {
+    background-color: #e05915;
+}
+
+.bg-yellow {
+    background-color: #cdd422;
+}
+
+.rotate-1 {
+    -webkit-transform: rotate(1deg); /* Chrome, Safari, Opera */
+    transform: rotate(1deg);
+}
+
+.webfont {
+    font-family: 'Oswald', sans-serif;
+}
+
+.webfont-700 {
+    font-weight: 700;
+}
+
+.webfont-400 {
+    font-weight: 400;
+}
+
+.webfont-300 {
+    font-weight: 300;
+}
+
+.heading-large {
+    font-size: 3em;
+}
